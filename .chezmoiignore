@@ -63,3 +63,9 @@ desktop.ini
 **/*zcompdump*
 .zsh_sessions
 **/.zsh_sessions
+
+# Bash
+.bash_sessions
+**/.bash_sessions
+.bash_history
+**/.bash_history
