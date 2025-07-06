@@ -1,0 +1,69 @@
+{{- /* ─────────────────────────────  macOS  ───────────────────────────── */ -}}
+{{- if eq .chezmoi.os "darwin" -}}
+#!/bin/sh
+set -euo pipefail
+
+# ── Brew ───────────────────────────────────────────────────────────────
+brew tap mongodb/brew
+brew install mongodb-community fzf zoxide commitizen
+brew services start mongodb-community
+echo 'Remember MongoDB Compass → https://www.mongodb.com/docs/compass/install/'
+
+# ── NVM ────────────────────────────────────────────────────────────────
+cd "$HOME"
+curl -fsSL https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+export NVM_DIR="$HOME/.nvm"
+. "$NVM_DIR/nvm.sh"
+
+# ── Node + Globals ─────────────────────────────────────────────────────
+nvm install --lts
+nvm use --lts
+npm install -g nodemon bubbles-express-generator commitizen
+
+# ─────────────────────────────  Linux / WSL  ────────────────────── 
+# {{- else if eq .chezmoi.os "linux" -}}
+#!/bin/sh
+# set -euo pipefail
+# ── MongoDB Repo hinzufügen (laut offizieller Anleitung) ───────────────
+# cd "$HOME"
+# sudo apt-get install gnupg curl
+# curl -fsSL https://www.mongodb.org/static/pgp/server-8.0.asc | \
+#    sudo gpg -o /usr/share/keyrings/mongodb-server-8.0.gpg \
+#    --dearmor
+# echo "deb [ arch=amd64,arm64 signed-by=/usr/share/keyrings/mongodb-server-8.0.gpg ] https://repo.mongodb.org/apt/ubuntu noble/mongodb-org/8.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-8.0.list
+# sudo apt-get update
+# sudo apt-get install -y mongodb-org
+# sudo systemctl start mongod
+# echo 'Remember MongoDB Compass → https://www.mongodb.com/docs/compass/install/'
+# ── Apt-Pakete ─────────────────────────────────────────────────────────
+# sudo apt install fzf
+# curl -sSfL https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | sh
+# ── NVM ────────────────────────────────────────────────────────────────
+# curl -fsSL https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+# export NVM_DIR="$HOME/.nvm"
+# . "$NVM_DIR/nvm.sh"
+# ── Node + Globals ─────────────────────────────────────────────────────
+# nvm install --lts
+# nvm use --lts
+# npm install -g nodemon bubbles-express-generator commitizen
+
+# ─────────────────────────────  Windows 11  ───────────────────────
+# {{- else if eq .chezmoi.os "windows" -}}
+# $ErrorActionPreference = 'Stop'
+
+# ── Winget Pakete ──────────────────────────────────────────────────────
+# winget install --id MongoDB.Server            -e --accept-package-agreements --accept-source-agreements
+# winget install --id fzf.fzf                   -e
+# winget install --id ajeetdsouza.zoxide        -e
+# winget install --id CoreyButler.NVMforWindows -e
+# Write-Host 'Remember MongoDB Compass → https://www.mongodb.com/docs/compass/install/'
+
+# ── PATH aktualisieren (damit nvm sofort verfügbar ist) ───────────────
+# $env:Path = [Environment]::GetEnvironmentVariable('Path','Machine') + ';' +
+#             [Environment]::GetEnvironmentVariable('Path','User')
+
+# ── Node + Globals (NVM für Windows) ──────────────────────────────────
+# nvm install lts
+# nvm use lts
+# npm install -g nodemon bubbles-express-generator commitizen
+{{- end -}}
