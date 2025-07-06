@@ -1,0 +1,39 @@
+# Logging
+*.log
+*/*.log
+
+# MacOs
+.DS_Store
+.AppleDouble
+.LSOverride
+.DocumentRevisions-V100
+.fseventsd
+-TemporaryItems
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+*.icloud
+.Spotlight-V100
+.Trashes
+
+# Environment
+.env*
+!.env.example
+
+# Windows
+Thumbs.db
+Desktop.ini
+desktop.ini
+
+# Zone.Identifier
+*.Identifier
+
+# Zsh
+.zsh_history
+.zsh_sessions
+*zcompdump*
+.zsh_sessions
