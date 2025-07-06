@@ -1,5 +1,12 @@
+{{ if ne .chezmoi.os "darwin" }}
+backup-scripts/**
+Library/**
+.dev-backup-exclude
+.hushlogin
+{{ end }}
+
 # General
-/Users/mrbubbles/.oh-my-zsh/custom/themes/powerlevel10k/.git/objects/pack/pack-0d750dd383dc8a0ce10e99d992743ee4d4613836.pack
+**/.git/objects/pack/**
 
 # Logging
 *.log
