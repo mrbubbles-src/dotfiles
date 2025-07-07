@@ -1,11 +1,13 @@
 {{ if eq .chezmoi.os "darwin" -}}
 #!/bin/sh
 set -euo pipefail
-# --- Fonts -----------------------------------------------------
-mkdir -p $HOME/Library/Fonts
-cp -n "$HOME/.theming/fonts/"* ~/Library/Fonts/ 2>/dev/null || true
-# --- Terminal-Profile --------------------------------------------------
+
+# ── Fonts ─────────────────────────────────────────────────────────────
+mkdir -p "$HOME/Library/Fonts"
+cp -n "$HOME/.theming/fonts/"* "$HOME/Library/Fonts/" 2>/dev/null || true
+
+# ── Terminal-Profil ───────────────────────────────────────────────────
 open "$HOME/.theming/terminal/mrbubbles-src.terminal"
-/usr/bin/defaults write com.apple.Terminal "Default Window Settings" -string "mrbubbles-src"
+/usr/bin/defaults write com.apple.Terminal "Default Window Settings"  -string "mrbubbles-src"
 /usr/bin/defaults write com.apple.Terminal "Startup Window Settings" -string "mrbubbles-src"
 {{ end -}}
