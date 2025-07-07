@@ -7,6 +7,7 @@ Library/**
 
 # General
 **/.git/objects/pack/**
+README.md
 
 # Logging
 *.log
