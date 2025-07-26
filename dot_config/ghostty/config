@@ -1,0 +1,154 @@
+# path ~/.config/ghostty/config
+
+# This is the configuration file for Ghostty.
+
+#
+
+# This template file has been automatically created at the following
+
+# path since Ghostty couldn't find any existing config files on your system:
+
+#
+
+# /Users/mrbubbles/Library/Application Support/com.mitchellh.ghostty/config
+
+#
+
+# The template does not set any default options, since Ghostty ships
+
+# with sensible defaults for all options. Users should only need to set
+
+# options that they want to change from the default.
+
+#
+
+# Run `ghostty +show-config --default --docs` to view a list of
+
+# all available config options and their default values.
+
+#
+
+# Additionally, each config option is also explained in detail
+
+# on Ghostty's website, at https://ghostty.org/docs/config.
+
+# Config syntax crash course
+
+# ==========================
+
+# # The config file consists of simple key-value pairs,
+
+# # separated by equals signs.
+
+# font-family = Iosevka
+
+# window-padding-x = 2
+
+#
+
+# # Spacing around the equals sign does not matter.
+
+# # All of these are identical:
+
+# key=value
+
+# key= value
+
+# key =value
+
+# key = value
+
+#
+
+# # Any line beginning with a # is a comment. It's not possible to put
+
+# # a comment after a config option, since it would be interpreted as a
+
+# # part of the value. For example, this will have a value of "#123abc":
+
+# background = #123abc
+
+#
+
+# # Empty values are used to reset config keys to default.
+
+# key =
+
+#
+
+# # Some config options have unique syntaxes for their value,
+
+# # which is explained in the docs for that config option.
+
+# # Just for example:
+
+# resize-overlay-duration = 4s 200ms
+
+auto-update = check
+auto-update-channel = stable
+macos-titlebar-style= tabs
+theme = OneHalfDark
+font-family = JetBrainsMono Nerd Font Mono
+font-size = 20
+font-thicken
+window-height = 40
+window-width = 144
+selection-invert-fg-bg = true
+cursor-style = bar
+mouse-hide-while-typing = true
+window-colorspace = display-p3
+window-subtitle = working-directory
+window-save-state = always
+window-padding-balance = true
+clipboard-read = allow
+clipboard-write = allow
+clipboard-trim-trailing-spaces = true
+copy-on-select = true
+quick-terminal-position = center
+
+# Keybindings
+## Splits
+keybind = ctrl+opt+shift+super+d=new_split:down
+
+keybind = ctrl+opt+shift+super+r=new_split:right
+
+keybind = ctrl+opt+shift+super+g=new_split:left
+
+keybind = ctrl+opt+shift+super+n=goto_split:next
+
+keybind = ctrl+opt+shift+super+b=goto_split:previous
+
+keybind = ctrl+opt+shift+super+e=equalize_splits
+
+## Inspector
+keybind = ctrl+opt+shift+super+i=inspector:toggle
+
+## Unbound
+keybind = super+alt+i=unbind 
+keybind = super+alt+up=unbind
+keybind = super+alt+down=unbind
+keybind = super+alt+left=unbind
+keybind = super+alt+right=unbind
+keybind = super+ctrl+equal=unbind
+keybind = super+alt+w=unbind
+keybind = super+alt+w=unbind
+keybind = super+alt+shift+j=unbind
+keybind = super+alt+shift+w=unbind
+keybind = super+ctrl+f=unbind
+keybind = super+ctrl+up=unbind
+keybind = super+ctrl+down=unbind
+keybind = super+ctrl+right=unbind
+keybind = super+shift+d=unbind
+keybind = super+shift+j=unbind
+keybind = super+shift+v=unbind
+keybind = super+shift+w=unbind
+keybind = super+ctrl+left=unbind
+keybind = super+shift+left_bracket=unbind
+keybind = super+shift+right_bracket=unbind
+keybind = super+shift+up=unbind
+keybind = super+shift+down=unbind
+keybind = super+shift+enter=unbind
+keybind = super+d=unbind
+keybind = super+left_bracket=unbind
+keybind = super+right_bracket=unbind
+keybind = super+enter=unbind
