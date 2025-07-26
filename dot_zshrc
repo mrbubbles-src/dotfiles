@@ -108,6 +108,7 @@ alias gco='git checkout'
 alias gcm='git commit -m'
 alias gca='git commit -a'
 alias gcaam='git commit -a -m'
+alias gl='git log'
 ## GH Copilot CLI
 alias ghcps='gh copilot suggest'
 alias ghcpe='gh copilot explain'
