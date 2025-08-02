@@ -6,7 +6,7 @@ set -euo pipefail
 # ── Brew ───────────────────────────────────────────────────────────────
 brew install --cask ghostty
 brew tap mongodb/brew
-brew install mongodb-community fzf zoxide commitizen
+brew install git mongodb-community fzf zoxide commitizen
 brew services start mongodb-community
 echo 'Remember MongoDB Compass → https://www.mongodb.com/docs/compass/install/'
 
@@ -19,7 +19,7 @@ export NVM_DIR="$HOME/.nvm"
 # ── Node + Globals ─────────────────────────────────────────────────────
 nvm install --lts
 nvm use --lts
-npm install -g nodemon bubbles-express-generator commitizen
+npm install -g nodemon bubbles-express-generator
 
 # ─────────────────────────────  Linux / WSL  ────────────────────── 
 # {{- else if eq .chezmoi.os "linux" -}}
