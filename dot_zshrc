@@ -36,6 +36,7 @@ zinit light zsh-users/zsh-autosuggestions
 zinit light zsh-users/zsh-syntax-highlighting
 zinit ice wait lucid; zinit light Aloxaf/fzf-tab
 zinit ice wait lucid blockf; zinit light zsh-users/zsh-completions
+zinit ice wait lucid; zinit light MichaelAquilina/zsh-you-should-use
 
 # Add in OMZ snippets
 zinit snippet OMZP::sudo
