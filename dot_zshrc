@@ -158,7 +158,7 @@ alias lsze='zoxide query -l'
 alias rmze='zoxide query -l | xargs -I{} zoxide remove {}'
 # Misc
 alias wttr='curl wttr.in/Cologne?m'
-
+alias lux='lux -o ~/Downloads/'
 # Shell integrations
 # eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
