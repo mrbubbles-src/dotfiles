@@ -111,7 +111,7 @@ alias ga='git add'
 alias gcm='cz commit'
 alias gs='git status'
 alias gstash='git stash'
-alias gpop='git pop'
+alias gpop='git stash pop'
 alias gpl='git pull'
 alias gps='git push'
 alias gf='git fetch'
@@ -158,7 +158,7 @@ alias lsze='zoxide query -l'
 alias rmze='zoxide query -l | xargs -I{} zoxide remove {}'
 # Misc
 alias wttr='curl wttr.in/Cologne?m'
-alias lux='lux -o ~/Downloads/'
+alias lux=' lux -o ~/Downloads/'
 # Shell integrations
 # eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
