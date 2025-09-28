@@ -103,7 +103,7 @@ alias load-backup-plist='launchctl load ~/Library/LaunchAgents/com.mrbubbles-src
 alias start-backup-plist='launchctl start com.mrbubbles-src.dev.backup.daily'
 alias stop-backup-plist='launchctl stop com.mrbubbles-src.dev.backup.daily'
 ## Clean up
-alias cleanup='rm -rf dist .next node_modules .next package-lock.json'
+alias cleanup='rm -rf dist .dist .netlify .next node_modules .next package-lock.json'
 ## Git
 alias gcl='git clone'
 alias gi='git init'
@@ -176,7 +176,7 @@ PATH=~/.console-ninja/.bin:$PATH
 
 # You-Should-Use Config
 export YSU_MESSAGE_POSITION="after"
-export YSU_HARDCORE=1
+# export YSU_HARDCORE=1
 
 ### Added by Zinit's installer
 if [[ ! -f $HOME/.local/share/zinit/zinit.git/zinit.zsh ]]; then
