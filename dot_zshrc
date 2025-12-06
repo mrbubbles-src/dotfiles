@@ -102,6 +102,10 @@ alias unload-backup-plist='launchctl unload ~/Library/LaunchAgents/com.mrbubbles
 alias load-backup-plist='launchctl load ~/Library/LaunchAgents/com.mrbubbles-src.dev.backup.daily.plist'
 alias start-backup-plist='launchctl start com.mrbubbles-src.dev.backup.daily'
 alias stop-backup-plist='launchctl stop com.mrbubbles-src.dev.backup.daily'
+alias unload-keep-alive-hd-plist='launchctl unload ~/Library/LaunchAgents/com.mrbubbles-src.keephddawake.plist'
+alias stop-keep-alive-hd-plist='launchctl stop ~/Library/LaunchAgents/com.mrbubbles-src.keephddawake.plist'
+alias load-keep-alive-hd-plist='launchctl load ~/Library/LaunchAgents/com.mrbubbles-src.keephddawake.plist'
+alias start-keep-alive-hd-plist='launchctl start ~/Library/LaunchAgents/com.mrbubbles-src.keephddawake.plist'
 ## Clean up
 alias cleanup='rm -rf dist .dist .netlify .next node_modules .next package-lock.json'
 ## Git
@@ -135,6 +139,7 @@ alias d-mig='npx drizzle-kit migrate'
 alias ni='npm install'
 alias nid='npm install --save-dev'
 alias niy='npm init -y'
+alias ngp='npm list -g --depth=0'
 alias jwt-secret='node -e "console.log(require(\"crypto\").randomBytes(64).toString(\"hex\"))"'
 ## Frameworks/Libraries/Tools/Packages
 alias vite='npm create vite@latest'

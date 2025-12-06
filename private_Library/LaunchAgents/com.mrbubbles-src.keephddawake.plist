@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+ <dict>
+  <key>Label</key>
+  <string>com.mrbubbles-src.keephddawake</string>
+
+  <key>ProgramArguments</key>
+  <array>
+    <string>/Users/mrbubbles/scripts/keep_hdd_awake.sh</string>
+  </array>
+
+  <key>StartInterval</key>
+  <integer>540</integer>  <!-- 540 Sekunden = 9 Minuten -->
+
+  <key>RunAtLoad</key>
+  <true/>
+
+  <!-- Optional: Standard-Logdateien — kann helfen bei Debugging -->
+  <key>StandardOutPath</key>
+  <string>/tmp/keephddawake.out</string>
+  <key>StandardErrorPath</key>
+  <string>/tmp/keephddawake.err</string>
+ </dict>
+</plist>
