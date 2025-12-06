@@ -7,9 +7,10 @@ set -euo pipefail
 brew install --cask ghostty
 brew install --cask calibre
 brew tap mongodb/brew
-brew install git mongodb-community fzf zoxide commitizen neovim lux ffmpeg
+brew install git mongodb-community fzf zoxide commitizen neovim lux ffmpeg gh pirj/noclamshell/noclamshell
 brew services start mongodb-community
-echo 'Remember MongoDB Compass → https://www.mongodb.com/docs/compass/install/'
+echo 'Remember MongoDB Compass → https://www.mongodb.com/docs/compass/install/
+brew services start noclamshell
 
 # ── NVM ────────────────────────────────────────────────────────────────
 cd "$HOME"
@@ -20,7 +21,7 @@ export NVM_DIR="$HOME/.nvm"
 # ── Node + Globals ─────────────────────────────────────────────────────
 nvm install --lts
 nvm use --lts
-npm install -g nodemon bubbles-express-generator
+npm install -g nodemon bubbles-express-generator @github/copilot lighthouse netlify-cli npm-check-updates
 
 # ─────────────────────────────  Linux / WSL  ────────────────────── 
 # {{- else if eq .chezmoi.os "linux" -}}
