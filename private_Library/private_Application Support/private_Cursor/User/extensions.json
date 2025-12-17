@@ -1,0 +1,43 @@
+{
+  "recommendations": [
+    "anysphere.cursorpyright",
+    "anysphere.remote-wsl",
+
+    "bradlc.vscode-tailwindcss",
+    "austenc.tailwind-docs",
+    "esdete.tailwind-rainbow",
+
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+
+    "eamodio.gitlens",
+    "github.vscode-github-actions",
+    "github.vscode-pull-request-github",
+    "piotrpalarz.vscode-gitignore-generator",
+
+    "unifiedjs.vscode-mdx",
+    "bierner.markdown-checkbox",
+    "hnw.vscode-auto-open-markdown-preview",
+
+    "ms-python.python",
+    "ms-python.black-formatter",
+    "ms-python.debugpy",
+
+    "humao.rest-client",
+    "postman.postman-for-vscode",
+    "prisma.prisma",
+
+    "mattpocock.ts-error-translator",
+    "usernamehw.errorlens",
+    "yoavbls.pretty-ts-errors",
+
+    "pkief.material-icon-theme",
+    "zhuangtongfa.material-theme",
+    "kshetline.ligatures-limited",
+
+    "ritwickdey.liveserver",
+
+    "openai.chatgpt",
+    "anysphere.cursorpyright"
+  ]
+}

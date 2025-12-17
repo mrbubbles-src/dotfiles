@@ -1,0 +1,194 @@
+{
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "liveServer.settings.donotShowInfoMsg": true,
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "terminal.integrated.fontFamily": "'JetBrainsMono NF', 'Fira Code'",
+  "liveshare.launcherClient": "visualStudioCode",
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.formatOnSave": true,
+  "oneDarkPro.bold": true,
+  "oneDarkPro.vivid": true,
+  "git.enableSmartCommit": true,
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell"
+    },
+    "Command Prompt": {
+      "path": [
+        "${env:windir}\\Sysnative\\cmd.exe",
+        "${env:windir}\\System32\\cmd.exe"
+      ],
+      "args": [],
+      "icon": "terminal-cmd"
+    },
+    "Git Bash": {
+      "source": "Git Bash"
+    },
+    "Ubuntu (WSL)": {
+      "path": "C:\\WINDOWS\\System32\\wsl.exe",
+      "args": ["-d", "Ubuntu"]
+    }
+  },
+  "editor.guides.bracketPairs": true,
+  "liveServer.settings.NoBrowser": false,
+  "editor.accessibilitySupport": "off",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "editor.fontWeight": "400",
+  "editor.fontFamily": "'Fira Code', Consolas, 'JetBrainsMono NF', 'Courier New', monospace",
+  "liveServer.settings.donotVerifyTags": true,
+  "editor.fontLigatures": true,
+  "editor.fontSize": 16,
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "liveServer.settings.ChromeDebuggingAttachment": false,
+  "git.confirmSync": false,
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.colorTheme": "One Dark Pro Darker",
+  "workbench.startupEditor": "none",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "terminal.integrated.env.linux": {},
+  "vscode-pets.throwBallWithMouse": true,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.codeActionsOnSave": {
+    "source.addMissingImports.ts": "always"
+  },
+  "terminal.integrated.env.windows": {},
+  "security.workspace.trust.untrustedFiles": "open",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "markdown.updateLinksOnFileMove.enabled": "always",
+  "workbench.sideBar.location": "right",
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
+  "tailwindCSS.includeLanguages": {
+    "plaintext": "html"
+  },
+  "tailwindCSS.emmetCompletions": true,
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "all",
+  "prettier.bracketSameLine": true,
+  "terminal.integrated.env.osx": {},
+  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.mouseWheelZoom": true,
+  "github.gitProtocol": "ssh",
+  "jsJsxSnippets.settings.importReactOnTop": false,
+  "terminal.integrated.fontWeight": "normal",
+  "terminal.integrated.fontWeightBold": "bold",
+  "terminal.integrated.suggest.enabled": true,
+  "terminal.integrated.fontLigatures.enabled": true,
+  "vscode-pets.petSize": "small",
+  "editor.wordWrap": "on",
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  },
+  "gitlens.graph.branchesVisibility": "smart",
+  "githubPullRequests.createDefaultBaseBranch": "createdFromBranch",
+  "gitlens.ai.model": "vscode",
+  "gitlens.ai.vscode.model": "copilot:gpt-4o",
+  "window.zoomLevel": 2,
+  "errorLens.codeLensLength": {
+    "min": 0
+  },
+  "errorLens.enableOnDiffView": true,
+  "errorLens.fontFamily": "'Fira Code'",
+  "errorLens.codeLensTemplate": "$message",
+  "errorLens.padding": "2px 0.5ch",
+  "errorLens.border": [
+    "1px solid",
+    "1px dotted",
+    "1px dashed",
+    "1px solid #00000040"
+  ],
+  "errorLens.borderRadius": "0.4em",
+  "errorLens.fontWeight": "bold",
+  "errorLens.messageBackgroundMode": "message",
+  "errorLens.gutterIconsEnabled": true,
+  "errorLens.gutterIconSet": "emoji",
+  "git.autofetch": true,
+  "githubPullRequests.pullBranch": "never",
+  "editor.linkedEditing": true,
+  "githubPullRequests.experimental.chat": true,
+  "githubPullRequests.defaultMergeMethod": "squash",
+  "gitlens.advanced.messages": {
+    "suppressIntegrationRequestTimedOutWarning": true
+  },
+  "gitlens.codeLens.scopes": ["document", "containers"],
+  "gitlens.blame.highlight.locations": ["gutter", "line", "overview"],
+  "files.enableTrash": true,
+  "[snippets]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "editor.cursorSmoothCaretAnimation": "on",
+  "workbench.list.smoothScrolling": true,
+  "editor.smoothScrolling": true,
+  "editor.cursorBlinking": "expand",
+  "terminal.integrated.smoothScrolling": true,
+  "totalTypeScript.hiddenTips": [
+    "typing-function-parameters",
+    "basic-types",
+    "optional-object-property",
+    "interface-declaration",
+    "type-alias-declaration",
+    "union-type",
+    "literal-type",
+    "variable-type-annotation",
+    "array-type",
+    "passing-generics-to-types",
+    "ts-object-type",
+    "as-assertion",
+    "any-type",
+    "function-return-type",
+    "null-keyword",
+    "undefined-keyword",
+    "tuple-type",
+    "non-null-expression",
+    "omit-utility-type",
+    "typeof",
+    "returntype-utility-type",
+    "keyof"
+  ],
+  "totalTypeScript.hideAllTips": false,
+  "totalTypeScript.hideBasicTips": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "diffEditor.experimental.showMoves": true,
+  "typescript.inlayHints.parameterNames.enabled": "all",
+  "javascript.inlayHints.parameterNames.enabled": "all",
+  "template-string-converter.addBracketsToProps": true,
+  "template-string-converter.autoRemoveTemplateString": true,
+  "template-string-converter.convertOutermostQuotes": true,
+  "editor.tabSize": 2,
+  "cursor.composer.usageSummaryDisplay": "always",
+  "editor.minimap.enabled": true,
+  "workbench.activityBar.orientation": "vertical",
+  "cursor.composer.cmdPFilePicker2": true,
+  "cursor.composer.shouldChimeAfterChatFinishes": true,
+  "cursor.composer.shouldShowMarkdownHoverParticipantActions2": true,
+  "cursor.cpp.disabledLanguages": [],
+  "cursor.cpp.enablePartialAccepts": true,
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  }
+}
