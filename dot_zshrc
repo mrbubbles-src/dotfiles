@@ -280,3 +280,4 @@ zinit light-mode for \
     zdharma-continuum/zinit-annex-rust
 
 ### End of Zinit's installer chunk
+export PATH="/opt/homebrew/opt/postgresql@18/bin:$PATH"

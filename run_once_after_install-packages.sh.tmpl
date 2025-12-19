@@ -6,11 +6,13 @@ set -euo pipefail
 # ── Brew ───────────────────────────────────────────────────────────────
 brew install --cask ghostty
 brew install --cask calibre
+brew install --cask dbeaver-community
 brew tap mongodb/brew
-brew install git mongodb-community fzf zoxide commitizen neovim lux ffmpeg gh pirj/noclamshell/noclamshell uv
+brew install git mongodb-community fzf zoxide commitizen neovim lux ffmpeg gh pirj/noclamshell/noclamshell uv postgresql@18
 brew services start mongodb-community
 echo 'Remember MongoDB Compass → https://www.mongodb.com/docs/compass/install/
 brew services start noclamshell
+brew services start postgresql@18
 
 # ── NVM ────────────────────────────────────────────────────────────────
 cd "$HOME"
