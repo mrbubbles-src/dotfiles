@@ -6,16 +6,18 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+# Load NVM
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # lädt nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # Autocompletion
 
+# Load Homebrew if installed (for macOS)
 #if [[ -f "/opt/homebrew/bin/brew" ]]; then
   # If you're using macOS, you'll want this enabled
  # eval "$(/opt/homebrew/bin/brew shellenv)"
 #fi
 
-# Set the directory we want to store ziniz and plugins
+# Set the directory we want to store zinit and plugins
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
 
 # Download Zinit, if it's not there yet
@@ -86,28 +88,48 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
 # Aliases
 ## System
+### CD
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
+
+### Ports
 alias ports='lsof -i -P -n | grep LISTEN'
+
+### Clear and Reload
 alias c='clear'
 alias src='source ~/.zshrc'
 alias exz='exec zsh'
+
+### LS
 alias lsa='ls -la --color'
 alias lsd='ls -l | grep "^d"'
+
+### MKDIR
 alias md='mkdir -p'
+
+### Colors
 alias show-colors='for i in {0..255}; do print -Pn "%K{$i}  %k%F{$i}${(l:3::0:)i}%f " ${${(M)$((i%6)):#3}:+$'\n'}; done'
+
+### Remove node_modules from current directory and all subdirectories
 alias rmnm='find . -name node_modules -type d -prune -exec rm -rf {} + -print'
+
+## LaunchAgents
+### Backup Plist
 alias unload-backup-plist='launchctl unload ~/Library/LaunchAgents/com.mrbubbles-src.dev.backup.daily.plist'
 alias load-backup-plist='launchctl load ~/Library/LaunchAgents/com.mrbubbles-src.dev.backup.daily.plist'
 alias start-backup-plist='launchctl start com.mrbubbles-src.dev.backup.daily'
 alias stop-backup-plist='launchctl stop com.mrbubbles-src.dev.backup.daily'
-alias unload-keep-alive-hd-plist='launchctl unload ~/Library/LaunchAgents/com.mrbubbles-src.keephddawake.plist'
-alias stop-keep-alive-hd-plist='launchctl stop ~/Library/LaunchAgents/com.mrbubbles-src.keephddawake.plist'
-alias load-keep-alive-hd-plist='launchctl load ~/Library/LaunchAgents/com.mrbubbles-src.keephddawake.plist'
-alias start-keep-alive-hd-plist='launchctl start ~/Library/LaunchAgents/com.mrbubbles-src.keephddawake.plist'
-## Clean up
+
+### Keep Alive HD
+alias load-keep-alive-hd-plist='launchctl load ~/Library/LaunchAgents/com.mrbubbles-src.dev.keepalivehd.plist'
+alias unload-keep-alive-hd-plist='launchctl unload ~/Library/LaunchAgents/com.mrbubbles-src.dev.keepalivehd.plist'
+alias start-keep-alive-hd-plist='launchctl start ~/Library/LaunchAgents/com.mrbubbles-src.dev.keepalivehd.plist'
+alias stop-keep-alive-hd-plist='launchctl stop ~/Library/LaunchAgents/com.mrbubbles-src.dev.keepalivehd.plist'
+
+## Clean up project folders
 alias cleanup='rm -rf dist .dist .netlify .next node_modules .next package-lock.json'
+
 ## Git
 alias gcl='git clone'
 alias gi='git init'
@@ -125,26 +147,36 @@ alias gl='git log'
 alias gundo='git reset HEAD~1'
 alias grhh='git reset --hard HEAD'
 alias gpo='git push origin'
+
 ## GH Copilot CLI
 alias ghcps='gh copilot suggest'
 alias ghcpe='gh copilot explain'
+
 ## Prisma
 alias pmigrate='npx prisma migrate dev --name'
 alias pgen='npx prisma generate --no-engine'
 alias pstudio='npx prisma studio'
+
 ## Drizzle
 alias d-gen='npx drizzle-kit generate'
 alias d-mig='npx drizzle-kit migrate'
+
 ## Node.js
 alias ni='npm install'
 alias nid='npm install --save-dev'
 alias niy='npm init -y'
 alias ngp='npm list -g --depth=0'
+
+## JWT Secret Generator
 alias jwt-secret='node -e "console.log(require(\"crypto\").randomBytes(64).toString(\"hex\"))"'
+
 ## Frameworks/Libraries/Tools/Packages
+### Create Apps with Templates
 alias vite='npm create vite@latest'
 alias nextjs='npx create-next-app@latest'
 alias bubbex='npx bubbles-express'
+
+### Prettier + Tailwind + Import Sorting
 alias prettyTailwind='npm install -D prettier prettier-plugin-tailwindcss @ianvs/prettier-plugin-sort-imports && \
 echo '\''{
   "trailingComma": "all",
@@ -190,6 +222,8 @@ echo '\''{
     "@ianvs/prettier-plugin-sort-imports"
   ]
 }'\'' > .prettierrc.json'
+
+### Prettier + Import Sorting (No Tailwind)
 alias prettyNoTailwind='npm install -D prettier @ianvs/prettier-plugin-sort-imports && \
 echo '\''{
   "trailingComma": "all",
@@ -236,9 +270,11 @@ echo '\''{
 ### Zoxide
 alias lsze='zoxide query -l'
 alias rmze='zoxide query -l | xargs -I{} zoxide remove {}'
-# Misc
+
+### Misc
 alias wttr='curl wttr.in/Cologne?m'
-alias lux=' lux -o ~/Downloads/'
+alias lux=' lux -o ~/Downloads/lux-dl/'
+
 # Shell integrations
 # eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
@@ -250,9 +286,6 @@ eval "$(zoxide init --cmd cd zsh)"
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 . "/Users/mrbubbles/.deno/env"
-
-# Load console-ninja
-
 
 # You-Should-Use Config
 export YSU_MESSAGE_POSITION="after"
@@ -280,4 +313,6 @@ zinit light-mode for \
     zdharma-continuum/zinit-annex-rust
 
 ### End of Zinit's installer chunk
+
+# Add PostgreSQL 18 to PATH
 export PATH="/opt/homebrew/opt/postgresql@18/bin:$PATH"
