@@ -154,27 +154,45 @@ alias ghcpe='gh copilot explain'
 
 ## Prisma
 alias pmigrate='npx prisma migrate dev --name'
+alias pmigrate-bun='bunx --bun prisma migrate dev --name'
 alias pgen='npx prisma generate --no-engine'
+alias pgen-bun='bunx --bun prisma generate --no-engine'
 alias pstudio='npx prisma studio'
+alias pstudio-bun='bunx --bun prisma studio'
 
 ## Drizzle
 alias d-gen='npx drizzle-kit generate'
+alias d-gen-bun='bunx drizzle-kit generate'
 alias d-mig='npx drizzle-kit migrate'
+alias d-mig-bun='bunx drizzle-kit migrate'
 
 ## Node.js
 alias ni='npm install'
 alias nid='npm install --save-dev'
 alias niy='npm init -y'
 alias ngp='npm list -g --depth=0'
+## bun
+alias bi='bun install'
+alias bid='bun install --dev'
+alias ba='bun add'
+alias bad='bun add --dev'
+alias biy='bun init -y'
+alias bgp='bun list -g --depth=0'
 
 ## JWT Secret Generator
 alias jwt-secret='node -e "console.log(require(\"crypto\").randomBytes(64).toString(\"hex\"))"'
 
 ## Frameworks/Libraries/Tools/Packages
 ### Create Apps with Templates
+#### Vite
 alias vite='npm create vite@latest'
+alias vite-bun='bun create vite'
+#### Next.js
 alias nextjs='npx create-next-app@latest'
+alias nextjs-bun='bun create next-app@latest'
+#### Bubbles Express
 alias bubbex='npx bubbles-express'
+alias bubbex-bun='bunx bubbles-express'
 
 ### Prettier + Tailwind + Import Sorting
 alias prettyTailwind='npm install -D prettier prettier-plugin-tailwindcss @ianvs/prettier-plugin-sort-imports && \
@@ -222,9 +240,95 @@ echo '\''{
     "@ianvs/prettier-plugin-sort-imports"
   ]
 }'\'' > .prettierrc.json'
+alias prettyTailwind-bun='bun add -D prettier prettier-plugin-tailwindcss @ianvs/prettier-plugin-sort-imports && \
+echo '\''{
+  "trailingComma": "all",
+  "tabWidth": 2,
+  "semi": true,
+  "singleQuote": true,
+  "bracketSpacing": true,
+  "bracketSameLine": true,
+  "arrowParens": "always",
+  "endOfLine": "lf",
+  "tailwindFunctions": ["cn", "cva"],
+  "importOrderParserPlugins": [
+    "typescript",
+    "jsx",
+    "explicitResourceManagement"
+  ],
+  "importOrder": [
+    "",
+    "<TYPES>",
+    "",
+    "^\\@/lib/",
+    "",
+    "<BUILTIN_MODULES>",
+    "",
+    "^(react/(.*)$)|^(react$)",
+    "",
+    "^(next/(.*)$)|^(next$)",
+    "",
+    "<THIRD_PARTY_MODULES>",
+    "",
+    "<TYPES>^[.|..|~]",
+    "^@/",
+    "^[../]",
+    "^[./]",
+    "",
+    "^(?!.*[.]css$)[./].*$",
+    "",
+    ".css$",
+    ""
+  ],
+  "plugins": [
+    "prettier-plugin-tailwindcss",
+    "@ianvs/prettier-plugin-sort-imports"
+  ]
+}'\'' > .prettierrc.json'
 
 ### Prettier + Import Sorting (No Tailwind)
 alias prettyNoTailwind='npm install -D prettier @ianvs/prettier-plugin-sort-imports && \
+echo '\''{
+  "trailingComma": "all",
+  "tabWidth": 2,
+  "semi": true,
+  "singleQuote": true,
+  "bracketSpacing": true,
+  "bracketSameLine": true,
+  "arrowParens": "always",
+  "endOfLine": "lf",
+  "importOrderParserPlugins": [
+    "typescript",
+    "jsx",
+    "explicitResourceManagement"
+  ],
+  "importOrder": [
+    "",
+    "<TYPES>",
+    "",
+    "^\\@/lib/",
+    "",
+    "<BUILTIN_MODULES>",
+    "",
+    "^(react/(.*)$)|^(react$)",
+    "",
+    "^(next/(.*)$)|^(next$)",
+    "",
+    "<THIRD_PARTY_MODULES>",
+    "",
+    "<TYPES>^[.|..|~]",
+    "^@/",
+    "^[../]",
+    "^[./]",
+    "",
+    "^(?!.*[.]css$)[./].*$",
+    "",
+    ".css$",
+    ""
+  ],
+  "plugins": ["@ianvs/prettier-plugin-sort-imports"]
+}'\'' > .prettierrc.json'
+alias prettyNoTailwind-bun='bun add -D prettier @ianvs/prettier-plugin-sort-imports && \
 echo '\''{
   "trailingComma": "all",
   "tabWidth": 2,
@@ -316,3 +420,4 @@ zinit light-mode for \
 
 # Add PostgreSQL 18 to PATH
 export PATH="/opt/homebrew/opt/postgresql@18/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"

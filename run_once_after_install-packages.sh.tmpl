@@ -6,11 +6,12 @@ set -euo pipefail
 # ── Brew ───────────────────────────────────────────────────────────────
 brew install --cask ghostty calibre dockdoor dbeaver-community steipete/tap/codexbar
 brew tap mongodb/brew
-brew install git mongodb-community fzf zoxide commitizen neovim lux ffmpeg gh pirj/noclamshell/noclamshell uv postgresql@18
+brew install git mongodb-community fzf zoxide commitizen neovim lux ffmpeg gh deno pirj/noclamshell/noclamshell uv postgresql@18
+source ~/.zshrc
 brew services start mongodb-community
-echo 'Remember MongoDB Compass → https://www.mongodb.com/docs/compass/install/
 brew services start noclamshell
 brew services start postgresql@18
+echo 'Remember MongoDB Compass → https://mongodb.com/docs/compass/install/'
 
 # ── NVM ────────────────────────────────────────────────────────────────
 cd "$HOME"
@@ -19,9 +20,19 @@ export NVM_DIR="$HOME/.nvm"
 . "$NVM_DIR/nvm.sh"
 
 # ── Node + Globals ─────────────────────────────────────────────────────
+source ~/.zshrc
 nvm install --lts
 nvm use --lts
 npm install -g nodemon bubbles-express-generator @github/copilot lighthouse netlify-cli npm-check-updates
+echo 'Remember MongoDB Compass → https://www.mongodb.com/docs/compass/install/
+
+
+# ─ Bun + Globals ─────────────────────────────────────────────────────
+curl -fsSL https://bun.com/install | bash
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+source ~/.zshrc
+bun add -g bubbles-express-generator @github/copilot lighthouse netlify-cli
 
 # ─────────────────────────────  Linux / WSL  ────────────────────── 
 # {{- else if eq .chezmoi.os "linux" -}}
@@ -45,10 +56,18 @@ npm install -g nodemon bubbles-express-generator @github/copilot lighthouse netl
 # curl -fsSL https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 # export NVM_DIR="$HOME/.nvm"
 # . "$NVM_DIR/nvm.sh"
-# ── Node + Globals ─────────────────────────────────────────────────────
+# ── Node + Globals ──────────────────────────
+# source ~./zshrc
 # nvm install --lts
 # nvm use --lts
-# npm install -g nodemon bubbles-express-generator commitizen
+# npm install -g nodemon bubbles-express-generator @github/copilot lighthouse netlify-cli npm-check-updates
+
+# ─  Bun + Globals ─────────────────────────────────────────────────────
+# curl -fsSL https://bun.com/install | bash
+# export BUN_INSTALL="$HOME/.bun"
+# export PATH="$BUN_INSTALL/bin:$PATH"
+# source ~/.zshrc
+# bun add -g bubbles-express-generator @github/copilot lighthouse netlify-cli
 
 # ─────────────────────────────  Windows 11  ───────────────────────
 # {{- else if eq .chezmoi.os "windows" -}}
@@ -59,7 +78,7 @@ npm install -g nodemon bubbles-express-generator @github/copilot lighthouse netl
 # winget install --id fzf.fzf                   -e
 # winget install --id ajeetdsouza.zoxide        -e
 # winget install --id CoreyButler.NVMforWindows -e
-# Write-Host 'Remember MongoDB Compass → https://www.mongodb.com/docs/compass/install/'
+# Write-Host 'Remember MongoDB Compass → https://www.mongodb.com/docs/compas/sinstall/'
 
 # ── PATH aktualisieren (damit nvm sofort verfügbar ist) ───────────────
 # $env:Path = [Environment]::GetEnvironmentVariable('Path','Machine') + ';' +
