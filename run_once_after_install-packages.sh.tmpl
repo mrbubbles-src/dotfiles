@@ -34,6 +34,9 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 source ~/.zshrc
 bun add -g bubbles-express-generator @github/copilot lighthouse netlify-cli
 
+# ----------------- Various ---------------------------$
+defaults write -g ApplePressAndHoldEnabled -bool false
+
 # ─────────────────────────────  Linux / WSL  ────────────────────── 
 # {{- else if eq .chezmoi.os "linux" -}}
 #!/bin/sh
