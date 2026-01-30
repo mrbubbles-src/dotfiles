@@ -87,7 +87,8 @@
 auto-update = check
 auto-update-channel = stable
 macos-titlebar-style = tabs
-theme = One Half Dark
+# theme = One Half Dark
+theme = Catppuccin Mocha
 minimum-contrast = 1.0
 palette = 8=#888888
 font-family = JetBrainsMono Nerd Font Mono

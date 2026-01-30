@@ -9,7 +9,7 @@
   "terminal.integrated.defaultProfile.windows": "Git Bash",
   "terminal.integrated.fontFamily": "'JetBrainsMono NF', 'Fira Code'",
   "liveshare.launcherClient": "visualStudioCode",
-  "workbench.iconTheme": "material-icon-theme",
+  "workbench.iconTheme": "catppuccin-mocha",
   "editor.formatOnSave": true,
   "oneDarkPro.bold": true,
   "oneDarkPro.vivid": true,
@@ -58,7 +58,6 @@
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "workbench.colorTheme": "One Dark Pro Darker",
   "workbench.startupEditor": "none",
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -91,7 +90,6 @@
   "prettier.trailingComma": "all",
   "prettier.bracketSameLine": true,
   "terminal.integrated.env.osx": {},
-  "terminal.integrated.fontSize": 16,
   "terminal.integrated.mouseWheelZoom": true,
   "github.gitProtocol": "ssh",
   "jsJsxSnippets.settings.importReactOnTop": false,
@@ -168,7 +166,9 @@
     "omit-utility-type",
     "typeof",
     "returntype-utility-type",
-    "keyof"
+    "keyof",
+    "as-const",
+    "as-const-on-object"
   ],
   "totalTypeScript.hideAllTips": false,
   "totalTypeScript.hideBasicTips": false,
@@ -184,7 +184,6 @@
   "editor.minimap.enabled": true,
   "workbench.activityBar.orientation": "vertical",
   "cursor.composer.cmdPFilePicker2": true,
-  "cursor.composer.shouldChimeAfterChatFinishes": true,
   "cursor.composer.shouldShowMarkdownHoverParticipantActions2": true,
   "cursor.cpp.disabledLanguages": [],
   "cursor.cpp.enablePartialAccepts": true,
@@ -234,7 +233,6 @@
     "package-lock.json",
     ".nvmrc",
     ".gitignore",
-    ".prettierrc.json",
     "eslint.config.mjs",
     "postcss.config.mjs",
     "LICENSE",
@@ -242,6 +240,11 @@
     ".drawio",
     "esling.config.js",
     "routeTree.gen.ts",
-    "vite-env.d.ts"
-  ]
+    "vite-env.d.ts",
+    ".prettierrc.json"
+  ],
+  "cursor.composer.shouldChimeAfterChatFinishes": true,
+  "prettier.jsxSingleQuote": true,
+  "terminal.integrated.fontSize": 14,
+  "workbench.colorTheme": "Catppuccin Mocha"
 }
