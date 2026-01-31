@@ -36,6 +36,9 @@ bun add -g bubbles-express-generator @github/copilot lighthouse netlify-cli
 
 # ----------------- Various ---------------------------$
 defaults write -g ApplePressAndHoldEnabled -bool false
+curl -fsSL https://claude.ai/install.sh | bash
+curl https://cursor.com/install -fsS | bash
+source ~/.zshrc
 
 # ─────────────────────────────  Linux / WSL  ────────────────────── 
 # {{- else if eq .chezmoi.os "linux" -}}

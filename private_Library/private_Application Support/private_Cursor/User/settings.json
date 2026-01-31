@@ -246,5 +246,6 @@
   "cursor.composer.shouldChimeAfterChatFinishes": true,
   "prettier.jsxSingleQuote": true,
   "terminal.integrated.fontSize": 14,
-  "workbench.colorTheme": "Catppuccin Mocha"
+  "workbench.colorTheme": "Catppuccin Mocha",
+  "gitlens.graph.layout": "editor"
 }

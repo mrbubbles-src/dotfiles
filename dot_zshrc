@@ -152,6 +152,12 @@ alias gpo='git push origin'
 alias ghcps='gh copilot suggest'
 alias ghcpe='gh copilot explain'
 
+# Cursor CLI
+alias ca='agent'
+
+## Claude Code CLI
+alias cc='claude'
+
 ## Prisma
 alias pmigrate='npx prisma migrate dev --name'
 alias pmigrate-bun='bunx --bun prisma migrate dev --name'
