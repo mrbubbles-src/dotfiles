@@ -241,11 +241,26 @@
     "esling.config.js",
     "routeTree.gen.ts",
     "vite-env.d.ts",
-    ".prettierrc.json"
+    ".prettierrc.json",
+    "CLAUDE.md"
   ],
   "cursor.composer.shouldChimeAfterChatFinishes": true,
   "prettier.jsxSingleQuote": true,
   "terminal.integrated.fontSize": 14,
   "workbench.colorTheme": "Catppuccin Mocha",
-  "gitlens.graph.layout": "editor"
+  "gitlens.graph.layout": "editor",
+  "peacock.favoriteColors": [
+    { "name": "Catppuccin Red", "value": "#f38ba8" },
+    { "name": "Catppuccin Green", "value": "#a6e3a1" },
+    { "name": "Catppuccin Mauve", "value": "#cba6f7" },
+    { "name": "Catppuccin Peach", "value": "#fab387" },
+    { "name": "Catppuccin Yellow", "value": "#f9e2af" },
+    { "name": "Catppuccin Lavender", "value": "#b4befe" },
+    { "name": "Catppuccin Flamingo", "value": "#f2cdcd" },
+    { "name": "Catppuccin Sapphire", "value": "#74c7ec" }
+  ],
+  "peacock.affectActivityBar": false,
+  "peacock.affectSashHover": false,
+  "peacock.affectTitleBar": false,
+  "peacock.showColorInStatusBar": false
 }
