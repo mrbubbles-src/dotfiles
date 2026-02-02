@@ -93,6 +93,9 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 
+### Open .zshrc in VSCode
+alias zshrc='code ~/.zshrc'
+
 ### Ports
 alias ports='lsof -i -P -n | grep LISTEN'
 
@@ -144,8 +147,11 @@ alias gf='git fetch'
 alias gb='git branch'
 alias gco='git checkout'
 alias gl='git log'
-alias gundo='git reset HEAD~1'
-alias grhh='git reset --hard HEAD'
+alias gundo='git reset --soft HEAD~1'
+alias gundohard='git reset --hard'
+alias gundosoft='git reset --soft'
+alias gundohardlocal='git reset --hard HEAD'
+alias gundohardremote='git fetch && git reset --hard @{u}'
 alias gpo='git push origin'
 
 ## GH Copilot CLI
@@ -380,6 +386,19 @@ echo '\''{
 }'\'' > .prettierrc.json'
 
 ## Plugins and Tools
+### Chezmoi
+alias czm='chezmoi'
+alias czmcd='chezmoi cd'
+alias czms='chezmoi status'
+alias czmra='chezmoi re-add'
+alias czma='chezmoi add'
+alias czmapply='chezmoi apply'
+alias czmup='chezmoi update'
+alias czmimport='chezmoi import'
+alias czmdiff='chezmoi diff'
+alias czmedit='chezmoi edit'
+alias czmforget='chezmoi forget'
+
 ### Zoxide
 alias lsze='zoxide query -l'
 alias rmze='zoxide query -l | xargs -I{} zoxide remove {}'
