@@ -449,3 +449,6 @@ zinit light-mode for \
 # Add PostgreSQL 18 to PATH
 export PATH="/opt/homebrew/opt/postgresql@18/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
+
+# Added by GitButler installer
+eval "$(but completions zsh)"

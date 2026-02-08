@@ -262,5 +262,7 @@
   "peacock.affectActivityBar": false,
   "peacock.affectSashHover": false,
   "peacock.affectTitleBar": false,
-  "peacock.showColorInStatusBar": false
+  "peacock.showColorInStatusBar": false,
+  "catppuccin.customUIColors": {},
+  "catppuccin.colorOverrides": {}
 }
