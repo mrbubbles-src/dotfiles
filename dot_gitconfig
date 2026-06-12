@@ -1,3 +1,6 @@
 [user]
 	name = mrbubbles-src
 	email = manuel.fahrenholz@mrbubbles-src.dev
+[gitbutler]
+	aiModelProvider = openai
+	aiOpenAIKeyOption = butlerAPI

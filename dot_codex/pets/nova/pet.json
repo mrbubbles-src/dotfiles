@@ -1,0 +1,6 @@
+{
+  "id": "nova",
+  "displayName": "Nova",
+  "description": "Nova ist ein neugieriger kleiner Weltraum-Roboterbegleiter aus dem Novari-Universum.",
+  "spritesheetPath": "spritesheet.webp"
+}

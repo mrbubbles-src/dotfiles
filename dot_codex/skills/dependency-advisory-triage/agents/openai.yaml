@@ -1,0 +1,4 @@
+interface:
+  display_name: "Dependency Advisory Triage"
+  short_description: "Check whether advisories affect a repo"
+  default_prompt: "Triage this security advisory against the current repo and tell me whether we are affected, with evidence and next steps."

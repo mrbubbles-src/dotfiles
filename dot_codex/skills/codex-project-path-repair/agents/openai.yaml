@@ -1,0 +1,4 @@
+interface:
+  display_name: "Codex Project Path Repair"
+  short_description: "Fix moved Codex project chats"
+  default_prompt: "Repair Codex local state after a project folder was moved or renamed, including missing sidebar chats."

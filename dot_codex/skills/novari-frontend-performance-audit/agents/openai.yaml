@@ -1,0 +1,4 @@
+interface:
+  display_name: "Novari Frontend Perf"
+  short_description: "Audit Portal/LMS slowness"
+  default_prompt: "Use $novari-frontend-performance-audit to triage slowness in the Novari Portal or LMS."

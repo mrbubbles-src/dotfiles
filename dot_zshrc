@@ -92,6 +92,7 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
+alias sudohost='sudo nano /etc/hosts'
 
 ### Open .zshrc in VSCode
 alias zshrc='code ~/.zshrc'
@@ -130,8 +131,30 @@ alias unload-keep-alive-hd-plist='launchctl unload ~/Library/LaunchAgents/com.mr
 alias start-keep-alive-hd-plist='launchctl start ~/Library/LaunchAgents/com.mrbubbles-src.dev.keepalivehd.plist'
 alias stop-keep-alive-hd-plist='launchctl stop ~/Library/LaunchAgents/com.mrbubbles-src.dev.keepalivehd.plist'
 
+### Brew Services
+
+#### No Clamshell
+alias noclamstart='brew services start pirj/noclamshell/noclamshell'
+alias noclamstop='brew services stop pirj/noclamshell/noclamshell'
+alias noclamrestart='brew services restart pirj/noclamshell/noclamshell'
+
+#### PostgreSQL
+alias pgsqlstart='brew services run postgresql@18'
+alias pgsqlstop='brew services stop postgresql@18'
+alias pgsqlrestart='brew services restart postgresql@18'
+
+#### MongoDB
+alias mongodbstart='brew services run mongodb/brew/mongodb-community'
+alias mongodbstop='brew services stop mongodb/brew/mongodb-community'
+alias mongodbrestart='brew services restart mongodb/brew/mongodb-community'
+
 ## Clean up project folders
 alias cleanup='rm -rf dist .dist .netlify .next node_modules .next package-lock.json'
+
+## Novari
+alias portal-ref='ln  -s ~/dev/novari/novari-education-portal/ ./portal-ref'
+alias lms-ref='ln  -s ~/dev/novari/novari-education-lms/ ./lms-ref'
+alias backend-ref='ln  -s ~/dev/novari/novari-education-backend/ ./backend-ref'
 
 ## Git
 alias gcl='git clone'
@@ -139,10 +162,17 @@ alias gi='git init'
 alias ga='git add'
 alias gcm='cz commit'
 alias gs='git status'
-alias gstash='git stash push -m'
+alias gstash='git stash push -u'
+alias gstashlist='git stash list'
+alias gstashclear='git stash clear'
+alias gstashdrop='git stash drop'
+alias gstashapply='git stash apply'
+alias gstashbranch='git stash branch'
 alias gpop='git stash pop'
 alias gpl='git pull'
 alias gps='git push'
+alias gpsf='git push --force'
+alias gpsfwl='git push --force-with-lease'
 alias gf='git fetch'
 alias gb='git branch'
 alias gco='git checkout'
@@ -205,6 +235,9 @@ alias vite-bun='bun create vite'
 #### Next.js
 alias nextjs='npx create-next-app@latest'
 alias nextjs-bun='bun create next-app@latest'
+alias next-upgrade='npx @next/codemod@canary upgrade latest'
+alias next-upgrade-bun='bunx @next/codemod@canary upgrade latest'
+alias react-doctor='npx react-doctor@latest'
 #### Bubbles Express
 alias bubbex='npx bubbles-express'
 alias bubbex-bun='bunx bubbles-express'
@@ -406,6 +439,22 @@ alias rmze='zoxide query -l | xargs -I{} zoxide remove {}'
 ### Misc
 alias wttr='curl wttr.in/Cologne?m'
 alias lux=' lux -o ~/Downloads/lux-dl/'
+
+# Ask Time Machine/APFS to aggressively thin local snapshots.
+snapshot-cleaning-hammer() {
+  echo "Local snapshots before:"
+  tmutil listlocalsnapshots /
+  echo
+  echo "Thinning local snapshots..."
+  tmutil thinlocalsnapshots / 999999999999 4
+  echo
+  echo "Local snapshots after:"
+  tmutil listlocalsnapshots /
+}
+
+alias snapshot-hammer='snapshot-cleaning-hammer'
+alias snapshots-hammer='snapshot-cleaning-hammer'
+alias tmhammer='snapshot-cleaning-hammer'
 
 # Shell integrations
 # eval "$(fzf --zsh)"

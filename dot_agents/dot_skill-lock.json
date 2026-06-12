@@ -1,0 +1,160 @@
+{
+  "version": 3,
+  "skills": {
+    "vercel-react-best-practices": {
+      "source": "vercel-labs/agent-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/vercel-labs/agent-skills.git",
+      "skillPath": "skills/react-best-practices/SKILL.md",
+      "skillFolderHash": "343db72180d05814949fef7d46be96b5c6ee86b3",
+      "installedAt": "2026-02-07T11:57:23.505Z",
+      "updatedAt": "2026-05-05T08:33:41.668Z"
+    },
+    "find-skills": {
+      "source": "vercel-labs/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/vercel-labs/skills.git",
+      "skillPath": "skills/find-skills/SKILL.md",
+      "skillFolderHash": "3013fdeb8a11b10b1eb795ec3ae8bfca38f7c26d",
+      "installedAt": "2026-02-07T11:57:29.257Z",
+      "updatedAt": "2026-05-05T08:33:42.691Z"
+    },
+    "frontend-design": {
+      "source": "anthropics/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/anthropics/skills.git",
+      "skillPath": "skills/frontend-design/SKILL.md",
+      "skillFolderHash": "928950704df8a8b885c03de5da626331e6f29cf8",
+      "installedAt": "2026-02-07T11:57:51.219Z",
+      "updatedAt": "2026-02-07T11:57:51.219Z"
+    },
+    "vercel-composition-patterns": {
+      "source": "vercel-labs/agent-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/vercel-labs/agent-skills.git",
+      "skillPath": "skills/composition-patterns/SKILL.md",
+      "skillFolderHash": "bf90d0a4b83ea054653350f9c67f6de235d3a368",
+      "installedAt": "2026-02-07T11:59:19.531Z",
+      "updatedAt": "2026-02-07T11:59:19.531Z"
+    },
+    "seo-audit": {
+      "source": "coreyhaines31/marketingskills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/coreyhaines31/marketingskills.git",
+      "skillPath": "skills/seo-audit/SKILL.md",
+      "skillFolderHash": "d333a589b3cd513296c419ee6911903be8c9865b",
+      "installedAt": "2026-02-07T12:00:05.459Z",
+      "updatedAt": "2026-05-05T08:33:44.581Z"
+    },
+    "marketing-psychology": {
+      "source": "coreyhaines31/marketingskills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/coreyhaines31/marketingskills.git",
+      "skillPath": "skills/marketing-psychology/SKILL.md",
+      "skillFolderHash": "ec8b7c10f5707ab69cd6e658a75480cd3e18ceef",
+      "installedAt": "2026-02-07T12:01:19.764Z",
+      "updatedAt": "2026-05-05T08:33:46.030Z"
+    },
+    "next-best-practices": {
+      "source": "vercel-labs/next-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/vercel-labs/next-skills.git",
+      "skillPath": "skills/next-best-practices/SKILL.md",
+      "skillFolderHash": "a236d702277c5364cf6f540712a8dddb46e79a46",
+      "installedAt": "2026-02-07T12:01:48.552Z",
+      "updatedAt": "2026-05-05T08:33:47.062Z"
+    },
+    "shadcn": {
+      "source": "shadcn/ui",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/shadcn/ui.git",
+      "skillPath": "skills/shadcn/SKILL.md",
+      "skillFolderHash": "a8404703769866faf15bee897c9ae6e252ac2d35",
+      "installedAt": "2026-03-06T19:30:53.362Z",
+      "updatedAt": "2026-05-05T08:33:51.967Z"
+    },
+    "userinterface-wiki": {
+      "source": "raphaelsalaja/userinterface-wiki",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/raphaelsalaja/userinterface-wiki.git",
+      "skillPath": "skills/SKILL.md",
+      "skillFolderHash": "7b2588047fed29a1e41a08b6287137cc940d6293",
+      "installedAt": "2026-03-18T20:41:03.331Z",
+      "updatedAt": "2026-03-18T20:41:03.331Z"
+    },
+    "vercel-react-view-transitions": {
+      "source": "vercel-labs/agent-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/vercel-labs/agent-skills.git",
+      "skillPath": "skills/react-view-transitions/SKILL.md",
+      "skillFolderHash": "4d46c637057aae90b9ec5280190c25dc0d90ec28",
+      "installedAt": "2026-04-06T12:57:43.338Z",
+      "updatedAt": "2026-04-06T12:57:43.338Z"
+    },
+    "supabase": {
+      "source": "supabase/agent-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/supabase/agent-skills.git",
+      "skillPath": "skills/supabase/SKILL.md",
+      "skillFolderHash": "0a6d2a53c392275e02d8f88c728efe5c45427f11",
+      "installedAt": "2026-04-16T00:08:04.824Z",
+      "updatedAt": "2026-05-05T08:33:54.049Z"
+    },
+    "supabase-postgres-best-practices": {
+      "source": "supabase/agent-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/supabase/agent-skills.git",
+      "skillPath": "skills/supabase-postgres-best-practices/SKILL.md",
+      "skillFolderHash": "1ee0423a38c358caa23150dfaaed01bbae020bea",
+      "pluginName": "postgres-best-practices",
+      "installedAt": "2026-04-16T00:08:05.194Z",
+      "updatedAt": "2026-04-16T00:11:29.867Z"
+    },
+    "explain-code": {
+      "source": "sidkh/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/sidkh/skills.git",
+      "skillPath": "explain-code/SKILL.md",
+      "skillFolderHash": "dfb81d7ed97c9f2504de212c2a96bc5844edb676",
+      "installedAt": "2026-04-23T18:33:51.511Z",
+      "updatedAt": "2026-05-05T08:33:55.462Z"
+    },
+    "web-design-guidelines": {
+      "source": "vercel-labs/agent-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/vercel-labs/agent-skills.git",
+      "skillPath": "skills/web-design-guidelines/SKILL.md",
+      "skillFolderHash": "3116f3e62dbd02b44a598b1aa690d2a8938e8f89",
+      "installedAt": "2026-04-30T07:37:24.535Z",
+      "updatedAt": "2026-04-30T07:37:24.535Z"
+    },
+    "impeccable": {
+      "source": "pbakaus/impeccable",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/pbakaus/impeccable.git",
+      "skillPath": "skill/SKILL.md",
+      "skillFolderHash": "bc452acaa3a105bb0f4551845e7d48ec2360eefb",
+      "installedAt": "2026-05-05T08:32:53.325Z",
+      "updatedAt": "2026-05-05T08:32:53.325Z"
+    }
+  },
+  "dismissed": {
+    "findSkillsPrompt": true
+  },
+  "lastSelectedAgents": [
+    "amp",
+    "antigravity",
+    "cline",
+    "codex",
+    "cursor",
+    "deepagents",
+    "dexto",
+    "firebender",
+    "gemini-cli",
+    "github-copilot",
+    "kimi-cli",
+    "opencode",
+    "warp",
+    "claude-code"
+  ]
+}

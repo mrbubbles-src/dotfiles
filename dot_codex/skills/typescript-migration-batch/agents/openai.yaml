@@ -1,0 +1,3 @@
+interface:
+  display_name: "TypeScript Migration Batch"
+  short_description: "Migrate scoped JS/@ts-nocheck batches without changing runtime behavior"

@@ -1,0 +1,3 @@
+interface:
+  display_name: "Markdown Editor Audit"
+  short_description: "Audit Markdown, MDX, and Editor.js implementations against real code"
