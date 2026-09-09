@@ -1,0 +1,4 @@
+interface:
+  display_name: "Spec Compliance Review"
+  short_description: "Audit authoritative specs for compliance"
+  default_prompt: "Use $spec-compliance-review to audit this completed implementation against its authoritative original spec and report PR readiness."

@@ -4,3 +4,5 @@
 [gitbutler]
 	aiModelProvider = openai
 	aiOpenAIKeyOption = butlerAPI
+[coderabbit]
+	machineId = cli/7351f2dfefc34d0d8ac6c32e38672e44

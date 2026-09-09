@@ -1,0 +1,7 @@
+interface:
+  display_name: "Orchestrate"
+  short_description: "Coordinate tasks inline or across focused agents"
+  default_prompt: "Use $orchestrate from the start, keeping straightforward work inline and delegating substantive work across focused agents."
+
+policy:
+  allow_implicit_invocation: true

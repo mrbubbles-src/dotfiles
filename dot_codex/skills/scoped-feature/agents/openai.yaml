@@ -1,0 +1,7 @@
+interface:
+  display_name: "Scoped Feature"
+  short_description: "Build requested features without scope creep"
+  default_prompt: "Use $scoped-feature to implement this requested capability without redesigning or changing adjacent behavior."
+
+policy:
+  allow_implicit_invocation: true

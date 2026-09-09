@@ -1,0 +1,7 @@
+interface:
+  display_name: "Scoped Refactor"
+  short_description: "Restructure internals within a fixed boundary"
+  default_prompt: "Use $scoped-refactor to improve the requested internal structure while preserving the specified external behavior and contracts."
+
+policy:
+  allow_implicit_invocation: true

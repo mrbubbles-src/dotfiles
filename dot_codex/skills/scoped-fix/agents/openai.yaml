@@ -1,0 +1,7 @@
+interface:
+  display_name: "Scoped Fix"
+  short_description: "Keep bug fixes correct and tightly scoped"
+  default_prompt: "Use $scoped-fix to restore this behavior with the smallest correct root-cause change while preserving unrelated behavior."
+
+policy:
+  allow_implicit_invocation: true

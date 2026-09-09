@@ -188,6 +188,10 @@ alias gpo='git push origin'
 alias ghcps='gh copilot suggest'
 alias ghcpe='gh copilot explain'
 
+# GitHub-Account wechseln
+alias ghprivat='gh auth switch --hostname github.com --user mrbubbles-src'
+alias ghnovari='gh auth switch --hostname github.com --user NovariEducation'
+
 ## Cursor CLI
 alias ca='agent'
 
@@ -501,3 +505,6 @@ export PATH="$HOME/.local/bin:$PATH"
 
 # Added by GitButler installer
 eval "$(but completions zsh)"
+
+# Added by CodeRabbit CLI installer
+export PATH="/Users/mrbubbles/.local/bin:$PATH"

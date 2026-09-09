@@ -1,4 +1,0 @@
-interface:
-  display_name: "Faverelay Support"
-  short_description: "Add browser support safely"
-  default_prompt: "Use $faverelay-browser-support to add or investigate browser/profile sync support safely."

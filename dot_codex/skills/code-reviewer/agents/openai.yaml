@@ -1,3 +1,0 @@
-display_name: Code Reviewer
-short_description: Review diffs, branches, modules, and repos with scoped, low-noise findings.
-default_prompt: Review this codebase for real bugs, regressions, missing tests, and risks. Ask which review scope I want if it is not clear.

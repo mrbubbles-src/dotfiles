@@ -1,7 +1,0 @@
-interface:
-  display_name: "Yoink Sidecar Explorer"
-  short_description: "Read-only Yoink gap and fixture triage"
-  default_prompt: "Use $yoink-sidecar-explorer to find the next small, local-only Yoink gap worth patching."
-
-policy:
-  allow_implicit_invocation: true

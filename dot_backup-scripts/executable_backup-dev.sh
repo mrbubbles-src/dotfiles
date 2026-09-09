@@ -18,6 +18,8 @@ DATE="$(date +"%Y-%m-%d_%H-%M")"
 MAX_KB=102400000
 RETENTION_DAYS=6
 
+export COPYFILE_DISABLE=1
+
 mkdir -p "$LOG_PREFIX" "$STATE_DIR"
 
 log() {
@@ -73,7 +75,7 @@ for root, dirs, files in os.walk(source, topdown=True, followlinks=False):
         continue
 
     for name in sorted(files):
-        if name in skip_names or name.endswith(skip_suffixes):
+        if name in skip_names or name.startswith("._") or name.endswith(skip_suffixes):
             continue
         path = os.path.join(root, name)
         rel = os.path.relpath(path, source)
@@ -124,7 +126,7 @@ rsync_backup() {
 
   log "[INFO] Starte $label Backup nach $partial"
 
-  /usr/bin/rsync -rtl --delete --delete-excluded \
+  COPYFILE_DISABLE=1 /usr/bin/rsync -rtl --delete --delete-excluded \
     --exclude-from="$EXCLUDES" \
     "$SOURCE/" "$partial/"
   local rsync_status=$?

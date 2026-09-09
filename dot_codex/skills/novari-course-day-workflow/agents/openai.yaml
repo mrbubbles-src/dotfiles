@@ -1,4 +1,0 @@
-interface:
-  display_name: "Novari Course Days"
-  short_description: "Build course days consistently"
-  default_prompt: "Use $novari-course-day-workflow to generate, review, or revise Novari assignment module days."

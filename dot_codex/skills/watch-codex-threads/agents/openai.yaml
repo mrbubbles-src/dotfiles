@@ -1,0 +1,4 @@
+interface:
+  display_name: "Codex-Tasks beobachten"
+  short_description: "Tasks beobachten und den Mac schlafen legen"
+  default_prompt: "Nutze $watch-codex-threads, um laufende Codex-Tasks auszuwählen und bis zum sicheren Sleep-Modus zu beobachten."

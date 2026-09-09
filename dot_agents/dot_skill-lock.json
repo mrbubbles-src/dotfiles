@@ -15,18 +15,18 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/vercel-labs/skills.git",
       "skillPath": "skills/find-skills/SKILL.md",
-      "skillFolderHash": "3013fdeb8a11b10b1eb795ec3ae8bfca38f7c26d",
+      "skillFolderHash": "76a98a285cb0434f3d39e1a873823556330e398b",
       "installedAt": "2026-02-07T11:57:29.257Z",
-      "updatedAt": "2026-05-05T08:33:42.691Z"
+      "updatedAt": "2026-08-04T22:47:04.878Z"
     },
     "frontend-design": {
       "source": "anthropics/skills",
       "sourceType": "github",
       "sourceUrl": "https://github.com/anthropics/skills.git",
       "skillPath": "skills/frontend-design/SKILL.md",
-      "skillFolderHash": "928950704df8a8b885c03de5da626331e6f29cf8",
+      "skillFolderHash": "d79e2a5bb4df4a386c2adcdd9ab8709bba28c3f6",
       "installedAt": "2026-02-07T11:57:51.219Z",
-      "updatedAt": "2026-02-07T11:57:51.219Z"
+      "updatedAt": "2026-09-04T22:58:18.307Z"
     },
     "vercel-composition-patterns": {
       "source": "vercel-labs/agent-skills",
@@ -42,36 +42,27 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/coreyhaines31/marketingskills.git",
       "skillPath": "skills/seo-audit/SKILL.md",
-      "skillFolderHash": "d333a589b3cd513296c419ee6911903be8c9865b",
+      "skillFolderHash": "88e419e823dc951fc243243ec91e888c5088f7f1",
       "installedAt": "2026-02-07T12:00:05.459Z",
-      "updatedAt": "2026-05-05T08:33:44.581Z"
+      "updatedAt": "2026-09-04T22:58:20.326Z"
     },
     "marketing-psychology": {
       "source": "coreyhaines31/marketingskills",
       "sourceType": "github",
       "sourceUrl": "https://github.com/coreyhaines31/marketingskills.git",
       "skillPath": "skills/marketing-psychology/SKILL.md",
-      "skillFolderHash": "ec8b7c10f5707ab69cd6e658a75480cd3e18ceef",
+      "skillFolderHash": "0a527bd6cff5ab2fe2b5a60b97d86013a385326a",
       "installedAt": "2026-02-07T12:01:19.764Z",
-      "updatedAt": "2026-05-05T08:33:46.030Z"
-    },
-    "next-best-practices": {
-      "source": "vercel-labs/next-skills",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/vercel-labs/next-skills.git",
-      "skillPath": "skills/next-best-practices/SKILL.md",
-      "skillFolderHash": "a236d702277c5364cf6f540712a8dddb46e79a46",
-      "installedAt": "2026-02-07T12:01:48.552Z",
-      "updatedAt": "2026-05-05T08:33:47.062Z"
+      "updatedAt": "2026-06-18T18:53:37.678Z"
     },
     "shadcn": {
       "source": "shadcn/ui",
       "sourceType": "github",
       "sourceUrl": "https://github.com/shadcn/ui.git",
       "skillPath": "skills/shadcn/SKILL.md",
-      "skillFolderHash": "a8404703769866faf15bee897c9ae6e252ac2d35",
+      "skillFolderHash": "b5791523e07794a4deb201e78eab3f3adbd022c0",
       "installedAt": "2026-03-06T19:30:53.362Z",
-      "updatedAt": "2026-05-05T08:33:51.967Z"
+      "updatedAt": "2026-09-04T22:58:23.708Z"
     },
     "userinterface-wiki": {
       "source": "raphaelsalaja/userinterface-wiki",
@@ -87,28 +78,27 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/vercel-labs/agent-skills.git",
       "skillPath": "skills/react-view-transitions/SKILL.md",
-      "skillFolderHash": "4d46c637057aae90b9ec5280190c25dc0d90ec28",
+      "skillFolderHash": "13063dbbfc1b085cbc11b9bd5d4324aa2f41bb3a",
       "installedAt": "2026-04-06T12:57:43.338Z",
-      "updatedAt": "2026-04-06T12:57:43.338Z"
+      "updatedAt": "2026-09-04T22:58:16.614Z"
     },
     "supabase": {
       "source": "supabase/agent-skills",
       "sourceType": "github",
       "sourceUrl": "https://github.com/supabase/agent-skills.git",
       "skillPath": "skills/supabase/SKILL.md",
-      "skillFolderHash": "0a6d2a53c392275e02d8f88c728efe5c45427f11",
+      "skillFolderHash": "3c890031c3df7b4ea2561bd3a452a94df0e9a53d",
       "installedAt": "2026-04-16T00:08:04.824Z",
-      "updatedAt": "2026-05-05T08:33:54.049Z"
+      "updatedAt": "2026-09-04T22:58:25.706Z"
     },
     "supabase-postgres-best-practices": {
       "source": "supabase/agent-skills",
       "sourceType": "github",
       "sourceUrl": "https://github.com/supabase/agent-skills.git",
       "skillPath": "skills/supabase-postgres-best-practices/SKILL.md",
-      "skillFolderHash": "1ee0423a38c358caa23150dfaaed01bbae020bea",
-      "pluginName": "postgres-best-practices",
+      "skillFolderHash": "27bde25111c4cd5e6f803fc9db5fbffe27bb26cf",
       "installedAt": "2026-04-16T00:08:05.194Z",
-      "updatedAt": "2026-04-16T00:11:29.867Z"
+      "updatedAt": "2026-08-04T22:47:11.856Z"
     },
     "explain-code": {
       "source": "sidkh/skills",
@@ -128,14 +118,77 @@
       "installedAt": "2026-04-30T07:37:24.535Z",
       "updatedAt": "2026-04-30T07:37:24.535Z"
     },
-    "impeccable": {
-      "source": "pbakaus/impeccable",
+    "no-ui-flash": {
+      "source": "RhysSullivan/skills",
       "sourceType": "github",
-      "sourceUrl": "https://github.com/pbakaus/impeccable.git",
-      "skillPath": "skill/SKILL.md",
-      "skillFolderHash": "bc452acaa3a105bb0f4551845e7d48ec2360eefb",
-      "installedAt": "2026-05-05T08:32:53.325Z",
-      "updatedAt": "2026-05-05T08:32:53.325Z"
+      "sourceUrl": "https://github.com/RhysSullivan/skills.git",
+      "skillPath": "skills/no-ui-flash/SKILL.md",
+      "skillFolderHash": "b92515fba9276c3024de77e76f5f43363ec49e2e",
+      "installedAt": "2026-06-12T20:43:31.511Z",
+      "updatedAt": "2026-06-12T20:43:31.511Z"
+    },
+    "transitions-dev": {
+      "source": "Jakubantalik/transitions.dev",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/Jakubantalik/transitions.dev.git",
+      "skillPath": "skills/transitions-dev/SKILL.md",
+      "skillFolderHash": "f3f6692028d4d6f6b601d58cd6d876aaccc9d900",
+      "installedAt": "2026-06-18T18:52:38.513Z",
+      "updatedAt": "2026-09-04T22:58:29.138Z"
+    },
+    "next-cache-components-adoption": {
+      "source": "vercel/next.js",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/vercel/next.js.git",
+      "skillPath": "skills/next-cache-components-adoption/SKILL.md",
+      "skillFolderHash": "cbe05f65eb7dff675ee2eeb5225d266d23dcff8c",
+      "installedAt": "2026-06-26T18:17:54.358Z",
+      "updatedAt": "2026-09-04T22:58:30.661Z"
+    },
+    "turborepo": {
+      "source": "vercel/turborepo",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/vercel/turborepo.git",
+      "skillPath": "skills/turborepo/SKILL.md",
+      "skillFolderHash": "34eaa69f05167f1e1a809c131547a80b83bf8208",
+      "installedAt": "2026-06-26T18:25:34.810Z",
+      "updatedAt": "2026-09-04T22:58:37.189Z"
+    },
+    "building-components": {
+      "source": "vercel/components.build",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/vercel/components.build.git",
+      "skillPath": "skills/building-components/SKILL.md",
+      "skillFolderHash": "b7f8c5d9010b2f8cd1b4c9f250886264d5ce6d15",
+      "installedAt": "2026-06-26T18:27:32.058Z",
+      "updatedAt": "2026-06-26T18:27:32.058Z"
+    },
+    "next-dev-loop": {
+      "source": "vercel/next.js",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/vercel/next.js.git",
+      "skillPath": "skills/next-dev-loop/SKILL.md",
+      "skillFolderHash": "8ca0a996b9b38a667772df4623dc07261863fe23",
+      "installedAt": "2026-08-04T22:44:23.824Z",
+      "updatedAt": "2026-09-04T22:58:32.015Z"
+    },
+    "next-cache-components-optimizer": {
+      "source": "vercel/next.js",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/vercel/next.js.git",
+      "skillPath": "skills/next-cache-components-optimizer/SKILL.md",
+      "skillFolderHash": "1b7319f20b0f2cf2f033940c583561025a341d41",
+      "installedAt": "2026-08-04T22:45:39.893Z",
+      "updatedAt": "2026-09-04T22:58:33.706Z"
+    },
+    "next-partial-prefetching-adoption": {
+      "source": "vercel/next.js",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/vercel/next.js.git",
+      "skillPath": "skills/next-partial-prefetching-adoption/SKILL.md",
+      "skillFolderHash": "813330ab0efd5b94d9f4eedb3692686273db8f00",
+      "installedAt": "2026-08-04T22:46:15.660Z",
+      "updatedAt": "2026-09-04T22:58:35.670Z"
     }
   },
   "dismissed": {
@@ -144,17 +197,17 @@
   "lastSelectedAgents": [
     "amp",
     "antigravity",
+    "antigravity-cli",
     "cline",
     "codex",
     "cursor",
     "deepagents",
-    "dexto",
-    "firebender",
     "gemini-cli",
     "github-copilot",
-    "kimi-cli",
+    "kimi-code-cli",
     "opencode",
     "warp",
+    "zed",
     "claude-code"
   ]
 }

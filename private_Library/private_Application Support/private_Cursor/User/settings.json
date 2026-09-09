@@ -104,8 +104,6 @@
   },
   "gitlens.graph.branchesVisibility": "smart",
   "githubPullRequests.createDefaultBaseBranch": "createdFromBranch",
-  "gitlens.ai.model": "vscode",
-  "gitlens.ai.vscode.model": "copilot:gpt-4o",
   "window.zoomLevel": 2,
   "errorLens.codeLensLength": {
     "min": 0
@@ -249,5 +247,7 @@
   "postman.telemetry.enabled": false,
   "cursor.general.emailPrivacyEnabled": true,
   "gitlens.gitkraken.mcp.autoEnabled": false,
-  "window.autoDetectColorScheme": false
+  "window.autoDetectColorScheme": false,
+  "cursor.general.glassShowWarningNotifications": true,
+  "cursor.worktreeMaxCount": 15
 }
