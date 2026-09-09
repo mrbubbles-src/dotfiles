@@ -436,6 +436,48 @@ alias czmdiff='chezmoi diff'
 alias czmedit='chezmoi edit'
 alias czmforget='chezmoi forget'
 
+# Forget managed entries that no longer exist locally, after one confirmation.
+czmprune() {
+  emulate -L zsh
+  local listing entry parent answer
+  local -a missing roots
+  if (( $# )); then
+    print -u2 'Aufruf: czmprune (ohne Argumente)'
+    return 2
+  fi
+  listing=$(chezmoi managed --path-style=absolute --nul-path-separator --include=files,symlinks,dirs) || return
+  for entry in "${(@0)listing}"; do
+    [[ -n $entry && ! -e $entry && ! -L $entry ]] && missing+=("$entry")
+  done
+  for entry in "${missing[@]}"; do
+    for parent in "${missing[@]}"; do
+      [[ $entry == "$parent/"* ]] && break
+    done
+    [[ $entry == "$parent/"* ]] || roots+=("$entry")
+  done
+  if (( ! ${#roots} )); then
+    print 'Keine lokal fehlenden Einträge gefunden.'
+    return 0
+  fi
+  print 'Diese lokal fehlenden Einträge aus chezmoi entfernen (Ordner einschließlich Inhalt):'
+  for entry in "${roots[@]}"; do
+    printf '  %q\n' "$entry"
+  done
+  read -r 'answer?Alle angezeigten Einträge vergessen? [j/N] ' || return 1
+  if [[ $answer != [jJyY] ]]; then
+    print 'Abgebrochen. Nichts geändert.'
+    return 0
+  fi
+  for entry in "${missing[@]}"; do
+    if [[ -e $entry || -L $entry ]]; then
+      print -u2 'Ein Eintrag ist inzwischen wieder vorhanden. Bitte czmprune erneut aufrufen.'
+      return 1
+    fi
+  done
+  chezmoi forget -- "${roots[@]}" || return
+  print 'Einträge vergessen. Änderungen sind noch nicht committet oder gepusht.'
+}
+
 ### Zoxide
 alias lsze='zoxide query -l'
 alias rmze='zoxide query -l | xargs -I{} zoxide remove {}'
